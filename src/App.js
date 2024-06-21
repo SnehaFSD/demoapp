@@ -1,23 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from "./Card";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <div className="row">
+      <Card name="Earth"></Card>
+      <Card name="World"></Card>
+      <Card name="Mars"></Card>
+      <Card name="Jupiter"></Card>
+      <Card name="saturn"></Card>
+      <Card name="Urainus"></Card>
+      <Card name="Pluto"></Card>
+      </div>
+      
     </div>
   );
 }
